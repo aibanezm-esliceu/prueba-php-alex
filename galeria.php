@@ -7,9 +7,8 @@ require __DIR__ . "/includes/header.php";
 <p>Imágenes cargadas dinámicamente con PHP desde la carpeta uploads.</p>
 
 <div class="galeria-grid">
-    <?ph
-    $dir = __DIR__ . "/uploads";
-    
+    <?php
+    $dir = __DIR__ . "/uploads"; 
     $files = scandir($dir);
     
     foreach ($files as $file) {
